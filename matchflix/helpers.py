@@ -95,7 +95,7 @@ def responseMessage(genres):
 
 # Find Trending Movies based on their genres
 
-def findMovies():
+def findMovies(genres):
   query2 = f"https://api.themoviedb.org/3/trending/movie/day?api_key={api_key}"
 
   response = requests.get(query2)
@@ -125,7 +125,8 @@ def outputMessage(movies_list):
     '''
     Takes a final list of movies and prints the output. 
     '''
-    print("\nYou should watch:")
+    message = "\nYou should watch:\n"
 
-    for movie in movies_output:
-        print("- " + movie)
+    for movie in movies_list:
+      message += "- " + movie
+    return message

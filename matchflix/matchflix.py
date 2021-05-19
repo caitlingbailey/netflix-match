@@ -16,8 +16,8 @@ def main():
 
     print(helpers.responseMessage(output))
 
-    movies_output = helpers.get_input(helpers.likedMovies(output, helpers.findMovies()), 2)
+    movies_output = helpers.get_input(helpers.likedMovies(output, helpers.findMovies(genres)), 2)
 
-    helpers.outputMessage(movies_output)
+    print(helpers.outputMessage(movies_output))
 
 main()
