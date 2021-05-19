@@ -10,8 +10,9 @@ import helpers
 # Main Application
 
 def main():
-    genres = helpers.get_genres()
     helpers.greeting()
+
+    genres = helpers.get_genres()
     output = helpers.get_input(genres.values(), 1)
 
     print(helpers.responseMessage(output))
