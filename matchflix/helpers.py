@@ -120,3 +120,12 @@ def likedMovies(genres, movie_choices):
       movies_list.append(key)
 
   return movies_list
+
+def outputMessage(movies_list):
+    '''
+    Takes a final list of movies and prints the output. 
+    '''
+    print("\nYou should watch:")
+
+    for movie in movies_output:
+        print("- " + movie)
