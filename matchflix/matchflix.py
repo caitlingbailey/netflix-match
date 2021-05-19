@@ -123,7 +123,7 @@ def likedMovies(genres, movie_choices):
 
   return movies_list
 
-# Testing Functions
+# Main Application
 
 def main():
   genres = get_genres()
