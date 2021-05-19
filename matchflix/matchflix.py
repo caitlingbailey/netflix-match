@@ -4,7 +4,7 @@
 
 # Imports
 
-import requests, json, csv, os, 
+import requests, json, csv, os
 import helpers
 
 # Main Application
