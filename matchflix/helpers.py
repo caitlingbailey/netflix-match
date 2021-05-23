@@ -130,3 +130,4 @@ def outputMessage(movies_list):
     for movie in movies_list:
       message += "- " + movie
     return message
+
