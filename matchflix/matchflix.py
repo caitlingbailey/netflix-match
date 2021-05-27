@@ -8,6 +8,7 @@
 import helpers
 
 # Main Application
+# Runs helper functions in sequence
 
 def main():
     helpers.greeting()
