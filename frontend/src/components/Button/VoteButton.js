@@ -1,5 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "'@fortawesome/react-fontawesome'"
+import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons"
+
+const upArrow = <FontAwesomeIcon icon={faThumbsUp} />
+const downArrow = <FontAwesomeIcon icon={faThumbsDown} />
 
 export const ButtonPrimary = styled.button`
     cursor: pointer;
@@ -21,13 +26,22 @@ export const ButtonPrimary = styled.button`
     -moz-appearance: none;
 `
 
-export const VoteYesButton = styled()
+export const VoteYesButton = styled(ButtonPrimary)`
+    background: #80c904;
+`
+
+export const VoteNoButton = styled(ButtonPrimary)`
+    background: #FF6666;
+    :hover {
+        background: white;
+    }
+`
 
 function VoteButton({ triggerEvent, text }) {
     return (
         <div>
-        <button className="vote-yes">{upArrow}</button>
-            <button className = "vote-no">{downArrow}</button>
+            <VoteYesButton>{upArrow}</VoteYesButton>
+            <VoteNoButton>{downArrow}</VoteNoButton>
         </div>
     )
 }
