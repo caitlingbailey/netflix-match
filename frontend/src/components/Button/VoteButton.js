@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "'@fortawesome/react-fontawesome'"
-import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
 
 const upArrow = <FontAwesomeIcon icon={faThumbsUp} />
 const downArrow = <FontAwesomeIcon icon={faThumbsDown} />
@@ -28,12 +28,15 @@ export const ButtonPrimary = styled.button`
 
 export const VoteYesButton = styled(ButtonPrimary)`
     background: #80c904;
+    :hover {
+        background: #a8c773
+    }
 `
 
 export const VoteNoButton = styled(ButtonPrimary)`
     background: #FF6666;
     :hover {
-        background: white;
+        background: #fca3a3;
     }
 `
 
